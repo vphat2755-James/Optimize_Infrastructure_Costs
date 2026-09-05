@@ -1,0 +1,22 @@
+{
+  "vertices": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+  "edges": [
+    {"source": "A", "target": "B", "weight": 4.5},
+    {"source": "A", "target": "C", "weight": 2.0},
+    {"source": "B", "target": "D", "weight": 5.0},
+    {"source": "B", "target": "E", "weight": 10.0},
+    {"source": "C", "target": "E", "weight": 3.0},
+    {"source": "C", "target": "F", "weight": 8.0},
+    {"source": "D", "target": "G", "weight": 2.5},
+    {"source": "E", "target": "D", "weight": 4.0},
+    {"source": "E", "target": "H", "weight": 6.0},
+    {"source": "F", "target": "I", "weight": 1.5},
+    {"source": "G", "target": "J", "weight": 7.0},
+    {"source": "H", "target": "G", "weight": 3.0},
+    {"source": "H", "target": "K", "weight": 9.0},
+    {"source": "I", "target": "H", "weight": 2.0},
+    {"source": "I", "target": "L", "weight": 4.0},
+    {"source": "J", "target": "K", "weight": 3.5},
+    {"source": "K", "target": "L", "weight": 1.0}
+  ]
+}
