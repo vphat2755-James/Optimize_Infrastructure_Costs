@@ -1,0 +1,20 @@
+{
+  "_ghi_chu": "Du lieu mo phong mang luoi giao hang. TV2: hay thay/mo rong bang du lieu that hoac nhieu dinh hon.",
+  "vertices": [
+    "Kho_Tong", "A", "B", "C", "D", "E", "F", "G"
+  ],
+  "edges": [
+    {"from": "Kho_Tong", "to": "A", "weight": 4},
+    {"from": "Kho_Tong", "to": "B", "weight": 2},
+    {"from": "A", "to": "C", "weight": 5},
+    {"from": "B", "to": "A", "weight": 1},
+    {"from": "B", "to": "D", "weight": 7},
+    {"from": "C", "to": "D", "weight": 3},
+    {"from": "C", "to": "E", "weight": 6},
+    {"from": "D", "to": "F", "weight": 2},
+    {"from": "E", "to": "F", "weight": 1},
+    {"from": "F", "to": "G", "weight": 4},
+    {"from": "D", "to": "G", "weight": 8}
+  ],
+  "diem_giao_hang_mau": ["C", "F", "G"]
+}
