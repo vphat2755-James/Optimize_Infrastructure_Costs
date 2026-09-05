@@ -12,7 +12,7 @@
 | `visualize.py` | TV6 | Vẽ đồ thị + highlight tuyến đường bằng networkx/matplotlib |
 | `main.py` | Trưởng nhóm | Tích hợp toàn bộ, chạy demo, test |
 
-## Thứ tự triển khai trong ngày
+## Thứ tự triển khai 
 
 1. **TV2 làm trước tiên** — hoàn thành `graph.py` + `data.json`, gửi ngay cho cả nhóm (mọi file khác đều `import` từ đây).
 2. **TV3, TV4, TV5, TV6 code song song** sau khi có `graph.py`.
