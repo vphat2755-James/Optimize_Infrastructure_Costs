@@ -1,13 +1,3 @@
-"""
-alt_algorithm.py
-Thuat toan doi chieu: Bellman-Ford + do hieu nang so voi Dijkstra.
-
-Muc dich:
-    - Cai dat Bellman-Ford, tra ve cung dinh dang (path, cost) nhu dijkstra.py
-      de de doi chieu ket qua.
-    - So sanh ket qua (co giong Dijkstra khong) va so sanh thoi gian chay.
-"""
-
 import time
 from graph import Graph, load_graph_from_json, generate_random_graph
 from dijkstra import shortest_path
