@@ -41,11 +41,7 @@ class Graph:
         for v in data.get("vertices", []):
             self.add_vertex(v)
         for edge in data.get("edges", []):
-            source = edge.get("source", edge.get("from"))
-            target = edge.get("target", edge.get("to"))
-            if source is None or target is None:
-                raise ValueError("Moi canh phai co source/target hoac from/to")
-            self.add_edge(source, target, edge["weight"])
+            self.add_edge(edge["source"], edge["target"], edge["weight"])
 
     def load_from_csv(self, filepath: str) -> None:
         with open(filepath, "r", encoding="utf-8") as f:
@@ -101,8 +97,9 @@ class Graph:
             print(f"{u:>5}" + "".join(row_vals))
 
 
-# ===== HÀM CẤP MODULE 
+# ===== HÀM CẤP MODULE — bắt buộc phải có, vì 5 file còn lại đều import:
 #     from graph import Graph, load_graph_from_json
+# Nếu thiếu hàm này, cả nhóm sẽ bị lỗi ImportError. =====
 def load_graph_from_json(filepath: str) -> Graph:
     g = Graph()
     g.load_from_json(filepath)
@@ -117,3 +114,15 @@ if __name__ == "__main__":
         g1.print_adj_matrix()
     except FileNotFoundError:
         print("Lỗi: Chưa tìm thấy data.json, kiểm tra lại file!")
+
+
+# ===== HÀM CẤP MODULE để tương thích với alt_algorithm.py của TV4 =====
+def generate_random_graph(num_vertices: int = 30, num_edges: int = 60, seed: int = 42) -> Graph:
+    """
+    Wrapper gọi lại Graph.generate_random() (đã có sẵn) dưới dạng hàm module,
+    để TV4 import được: from graph import generate_random_graph
+    """
+    import random as _random
+    _random.seed(seed)
+    edge_prob = min(1.0, num_edges / max(num_vertices * (num_vertices - 1), 1))
+    return Graph.generate_random(num_vertices=num_vertices, edge_prob=edge_prob)
