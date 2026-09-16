@@ -50,6 +50,6 @@ if __name__ == "__main__":
     demo_1_diem_den()
     demo_2_so_sanh_thuat_toan()
     demo_3_giao_nhieu_diem()
-    test_khong_co_duong_di()
+    #test_Kg_di()
 
     print("\n=== HOAN THANH DEMO TICH HOP ===")

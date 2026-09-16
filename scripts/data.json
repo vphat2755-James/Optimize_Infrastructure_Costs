@@ -1,6 +1,8 @@
 {
-  "vertices": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+  "vertices": ["Kho_Tong", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
   "edges": [
+    {"source": "Kho_Tong", "target": "A", "weight": 3.0},
+    {"source": "Kho_Tong", "target": "B", "weight": 5.0},
     {"source": "A", "target": "B", "weight": 4.5},
     {"source": "A", "target": "C", "weight": 2.0},
     {"source": "B", "target": "D", "weight": 5.0},
@@ -18,5 +20,6 @@
     {"source": "I", "target": "L", "weight": 4.0},
     {"source": "J", "target": "K", "weight": 3.5},
     {"source": "K", "target": "L", "weight": 1.0}
-  ]
+  ],
+  "diem_giao_hang_mau": ["C", "F", "G", "L"]
 }
