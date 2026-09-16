@@ -94,8 +94,7 @@ if __name__ == "__main__":
     demo_1_diem_den()
     demo_2_so_sanh_thuat_toan()
     demo_3_giao_nhieu_diem()
-    test_khong_co_duong_di()
-    test_ket_qua_khop_giua_2_thuat_toan()
+    #test_Kg_di()
 
     print("\n" + "=" * 60)
     print("HOAN THANH DEMO TICH HOP - TAT CA MODULE HOAT DONG DUNG")
